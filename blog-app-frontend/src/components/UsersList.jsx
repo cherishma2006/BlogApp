@@ -16,7 +16,7 @@ function UsersList() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  const BASE_URL = import.meta.env.VITE_API_URL || "https://blogapp-xz5w.onrender.com";
+  const BASE_URL = import.meta.env.VITE_API_URL || https://blogapp-xz5w.onrender.com;
 
   // 📡 Fetch users
   useEffect(() => {
