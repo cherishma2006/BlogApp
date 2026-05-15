@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import axios from "axios";
 
-const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:4000";
+const BASE_URL = import.meta.env.VITE_API_URL || "https://blogapp-xz5w.onrender.com";
 
 export const useAuth = create((set) => ({
   currentUser: null,

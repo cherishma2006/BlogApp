@@ -1,5 +1,5 @@
 ###register author
-POST http://localhost:4000/auth/users
+POST https://blogapp-xz5w.onrender.com/auth/users
 Content-Type: application/json
 
 {
@@ -13,7 +13,7 @@ Content-Type: application/json
 
 
 ###login
-POST http://localhost:4000/auth/login
+POST https://blogapp-xz5w.onrender.com/auth/login
 Content-Type:  application/json
 
 {
@@ -22,7 +22,7 @@ Content-Type:  application/json
 }
 
 ###create new article
-POST http://localhost:4000/author-api/article
+POST https://blogapp-xz5w.onrender.com/author-api/article
 Content-Type: application/json
 
 {
@@ -34,15 +34,15 @@ Content-Type: application/json
 
 
 ###read own articles
-GET http://localhost:4000/author-api/articles
+GET https://blogapp-xz5w.onrender.com/author-api/articles
 
 
 ###logout
-GET http://localhost:4000/auth/logout
+GET https://blogapp-xz5w.onrender.com/auth/logout
 
 
 ###update article
-PUT http://localhost:4000/author-api/articles
+PUT https://blogapp-xz5w.onrender.com/author-api/articles
 Content-Type: application/json
 
 {
@@ -54,7 +54,7 @@ Content-Type: application/json
 
 
 ###delete article and restore by article id(soft delete)
-PATCH http://localhost:4000/author-api/articles
+PATCH https://blogapp-xz5w.onrender.com/author-api/articles
 Content-Type: application/json
 
 {

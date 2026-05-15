@@ -1,5 +1,5 @@
 ###admin login
-POST http://localhost:4000/auth/login
+POST https://blogapp-xz5w.onrender.com/auth/login
 Content-Type: application/json
 
 {
@@ -8,11 +8,11 @@ Content-Type: application/json
 }
 
 ###read all users & authors(email)
-GET http://localhost:4000/admin-api/users
+GET https://blogapp-xz5w.onrender.com/admin-api/users
 
 
 ###block user or author
-PUT http://localhost:4000/admin-api/user/69b3c80a0aae7f044625f432
+PUT https://blogapp-xz5w.onrender.com/admin-api/user/69b3c80a0aae7f044625f432
 Content-Type: application/json
 
 {
@@ -20,7 +20,7 @@ Content-Type: application/json
 }
 
 ###activate user or author
-PUT http://localhost:4000/auth/user/USER_ID_HERE/status
+PUT https://blogapp-xz5w.onrender.com/auth/user/USER_ID_HERE/status
 Content-Type: application/json
 
 {

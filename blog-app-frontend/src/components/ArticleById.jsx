@@ -37,7 +37,7 @@ function ArticleByID() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   // BASE URL
-  const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:4000";
+  const BASE_URL = import.meta.env.VITE_API_URL || "https://blogapp-xz5w.onrender.com";
   useEffect(() => {
     if (article) return;
     const getArticle = async () => {
