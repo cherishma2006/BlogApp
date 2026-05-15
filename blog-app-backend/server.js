@@ -12,7 +12,7 @@ config();
 const app = exp();
 //enable cors
 app.use(cors({
-  origin:[`http://localhost:5173`],credentials:true
+  origin:[`http://localhost:5173`,`blog-app-five-tawny.vercel.app`],credentials:true
 }))
 //add cookie parser middeleware
 app.use(cookieParser())
