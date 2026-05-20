@@ -74,10 +74,10 @@ commonApp.post("/login", async (req, res) => {
       { expiresIn: "1h" }
     );
     res.cookie("token", token, {
-      httpOnly: true,
-      secure: false,
-      sameSite: "lax",
-    });
+  httpOnly: true,
+  secure: true,
+  sameSite: "None",
+});
     let userObj = user.toObject();
     delete userObj.password;
     res.status(200).json({
@@ -93,10 +93,10 @@ commonApp.post("/login", async (req, res) => {
 //LOGOUT 
 commonApp.get("/logout", (req, res) => {
   res.clearCookie("token", {
-    httpOnly: true,
-    secure: false,
-    sameSite: "lax",
-  });
+  httpOnly: true,
+  secure: true,
+  sameSite: "None",
+});
   res.status(200).json({ message: "Logout success" });
 });
 
