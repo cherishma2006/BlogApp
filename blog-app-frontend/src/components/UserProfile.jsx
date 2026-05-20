@@ -12,7 +12,7 @@ function UserProfile() {
   const [error, setError] = useState(null);
   const [articles, setArticles] = useState([]);
 
-const BASE_URL = import.meta.env.VITE_API_URL;
+const BASE_URL = import.meta.env.VITE_API_URL || "https://blogapp-1-9azi.onrender.com";
   useEffect(() => {
     const getArticles = async () => {
       setLoading(true);

@@ -48,7 +48,7 @@ function Register() {
         formData.append("profileImageUrl", userObj.profileImageUrl[0]);
       }
 
-      const BASE_URL = import.meta.env.VITE_API_URL ;
+      const BASE_URL = import.meta.env.VITE_API_URL || "https://blogapp-1-9azi.onrender.com" ;
 
 const res = await axios.post(
   `${BASE_URL}/auth/users`,  
