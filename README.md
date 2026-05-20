@@ -189,10 +189,11 @@ UI Updated
 ### Deployment
 
 Frontend deployed on Vercel:
+https://blog-app1-two.vercel.app/
 
 
 Backend deployed on Render:
-
+https://blogapp-1-9azi.onrender.com
 
 
 Deployment flow:
