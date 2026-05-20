@@ -5,21 +5,26 @@ import { userApp } from "./APIs/UserAPI.js";
 import { authorApp } from "./APIs/AuthorAPI.js";
 import { adminApp } from "./APIs/AdminAPI.js";
 import { commonApp } from "./APIs/CommonAPI.js";
-import cors from 'cors'
+import cors from "cors";
 import cookieParser from "cookie-parser";
+
 config();
+
 //create express app
 const app = exp();
+
 //enable cors
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://blog-app-five-tawny.vercel.app"
+    "https://blog-app1-two.vercel.app"
   ],
   credentials: true
 }));
-//add cookie parser middeleware
-app.use(cookieParser())
+
+//add cookie parser middleware
+app.use(cookieParser());
+
 //body parser middleware
 app.use(exp.json());
 //path level middlewares
